@@ -1,0 +1,16 @@
+{
+    "name": "Sentiment-Analyser",
+    "dockerComposeFile": [
+        "../docker-compose.yml",
+        "../docker-compose.sentiment-analyser.yml"
+    ],
+    "service": "sentiment-analyser",
+    "shutdownAction": "none",
+    "extensions": [
+        "nwolverson.ide-purescript",
+        "nwolverson.language-purescript",
+        "mvakula.vscode-purty"
+    ],
+    // Open the sub-folder with the source code
+    "workspaceFolder": "/app"
+}

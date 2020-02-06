@@ -1,0 +1,15 @@
+{
+    "name": "Sentiments",
+    "dockerComposeFile": [
+        "../docker-compose.yml",
+        "../docker-compose.sentiments.yml"
+    ],
+    "service": "sentiments",
+    "shutdownAction": "none",
+    "extensions": [
+        "scalameta.metals",
+        "ms-vsliveshare.vsliveshare-pack"
+    ],
+    // Open the sub-folder with the source code
+    "workspaceFolder": "/app"
+}

@@ -1,0 +1,23 @@
+version: '3'
+
+services:
+  sentiment-analyser:
+    build:
+      dockerfile: docker/purescript/Dockerfile
+      context: .
+    volumes:
+      # Application
+      - ./sentiment-analyser:/app
+      - /app/node_modules/ # exclude node modules
+      # Caches
+      - ./docker/.home/.vscode-server:/home/root/.vscode-server
+    ports:
+      - 9003:9003
+    stdin_open: true
+    tty: true
+    entrypoint: /bin/sh
+    working_dir: /app
+    #user: sbtuser
+    env_file:
+      - environment.env
+

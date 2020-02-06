@@ -1,0 +1,43 @@
+version: '3'
+
+services:
+  feeder-ui:
+    build:
+      dockerfile: docker/Dockerfile
+      context: feeder-ui
+    ports:
+      - 9000:9000
+    env_file:
+      - environment.env
+
+  feeder-http:
+    build:
+      dockerfile: docker/Dockerfile
+      context: feeder-http
+    ports:
+      - 9001:9001
+    env_file:
+      - environment.env
+    depends_on:
+      - kafka1    
+
+  sentiments:
+    build:
+      dockerfile: docker/Dockerfile
+      context: sentiments
+    ports:
+      - 9002:9002
+    env_file:
+      - environment.env
+    depends_on:
+      - sentiment-analyser
+      - kafka1
+
+  sentiment-analyser:
+    build:
+      dockerfile: docker/Dockerfile
+      context: sentiment-analyser
+    ports:
+      - 9003:9003
+    env_file:
+      - environment.env

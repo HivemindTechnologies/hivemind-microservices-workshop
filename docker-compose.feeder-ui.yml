@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+  feeder-ui:
+    build:
+      dockerfile: docker/purescript/Dockerfile
+      context: .
+    volumes:
+      # Application
+      - ./feeder-ui:/app
+      - /app/node_modules/ # exclude node modules
+      # Caches
+      - ./docker/.home/.vscode-server:/home/root/.vscode-server
+    ports:
+      - 9000:9000
+    stdin_open: true
+    tty: true
+    entrypoint: /bin/sh
+    working_dir: /app
+    env_file:
+      - environment.env
+

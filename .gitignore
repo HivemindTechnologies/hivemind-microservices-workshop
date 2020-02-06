@@ -1,0 +1,7 @@
+*.class
+*.log
+.idea/
+project/project/
+target/
+project/build.properties
+docker/.home/

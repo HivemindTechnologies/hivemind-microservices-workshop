@@ -1,0 +1,15 @@
+{
+    "name": "Feeder",
+    "dockerComposeFile": [
+        "../docker-compose.yml",
+        "../docker-compose.feeder-http.yml"
+    ],
+    "service": "feeder-http",
+    "shutdownAction": "none",
+    "extensions": [
+        "scalameta.metals",
+        "ms-vsliveshare.vsliveshare-pack"
+    ],
+    // Open the sub-folder with the source code
+    "workspaceFolder": "/app"
+}

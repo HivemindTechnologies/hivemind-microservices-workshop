@@ -1,0 +1,16 @@
+{
+    "name": "Feeder UI",
+    "dockerComposeFile": [
+        "../docker-compose.yml",
+        "../docker-compose.feeder-ui.yml"
+    ],
+    "service": "feeder-ui",
+    "shutdownAction": "none",
+    "extensions": [
+        "nwolverson.ide-purescript",
+        "nwolverson.language-purescript",
+        "mvakula.vscode-purty"
+    ],
+    // Open the sub-folder with the source code
+    "workspaceFolder": "/app"
+}

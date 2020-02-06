@@ -1,0 +1,31 @@
+@startuml C4_Elements
+!includeurl https://raw.githubusercontent.com/RicardoNiepel/C4-PlantUML/release/1-0/C4_Container.puml
+
+LAYOUT_TOP_DOWN
+
+Person(user, "User")
+
+System_Boundary(frontent, "Frontend / UI") {
+  Container(feeder_ui, "Feeder-UI", "PureScript/React", " Web Application/UI for creating tweets")
+  Container(kibana, "Tweets/Sentiment Dashboard", "Kibana", "Displays tweets and sentiments")
+}
+
+System_Boundary(backend, "Backend") {
+  Container(feeder_http, "Feeder-Http", "Scala", "Tweet backend. An API that writes tweets to the message broker")
+  Container(kafka, "Message Bus", "Kafka", "Topics: tweets, sentiments")
+  Container(sentiments, "Sentiments", "Scala", "Porcesses tweets from kafka using sentiment-analyser")
+  Container(sentiment_analyser, "Sentiment-Analyser", "PureScript/Tensorflow", "Analyses tweet sentiements")
+  ContainerDb(elasticsearch, "Persistent Storage", "Elasticsearch", "Stores tweets and sentiments persistently")
+  Container(kafka_connect, "Elasticsearch Sink", "Kafka Connect", "Kafka Connect instance with sinks that writes tweets and sentiments to Elasticsearch")
+}
+
+Rel(user, feeder_ui, "Uses", "Browser")
+Rel(feeder_ui, feeder_http, "Uses", "HTTP")
+Rel(feeder_http, kafka, "Sends tweets to")
+Rel(sentiments, kafka, "Reads from tweets and writes to sentiments")
+Rel(sentiments, sentiment_analyser, "Gets the sentiments analysis")
+Rel(kafka_connect, kafka, "Reads tweets and sentiments")
+Rel(kafka_connect, elasticsearch, "Writes tweets and sentiments")
+Rel(kibana, elasticsearch, "Reads from")
+Rel(user, kibana, "Uses", "Browser")
+@enduml

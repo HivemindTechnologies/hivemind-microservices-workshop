@@ -1,0 +1,26 @@
+version: '3'
+
+services:
+  feeder-http:
+    build:
+      dockerfile: docker/scala/Dockerfile
+      context: .
+    volumes:
+      # App
+      - ./feeder-http:/app
+      # Caches
+      - ./docker/.home/.cache:/home/sbtuser/.cache
+      - ./docker/.home/.ivy2:/home/sbtuser/.ivy2
+      - ./docker/.home/.local:/home/sbtuser/.local
+      - ./docker/.home/.vscode-server:/home/sbtuser/.vscode-server
+      - ./docker/.home/.sbt/1.0:/home/sbtuser.sbt/1.0
+      - ./docker/.home/.sbt/boot:/home/sbtuser/.sbt/boot
+    ports:
+      - 9001:9001
+    stdin_open: true
+    tty: true
+    entrypoint: /bin/sh
+    working_dir: /app
+    user: sbtuser
+    env_file:
+      - environment.env

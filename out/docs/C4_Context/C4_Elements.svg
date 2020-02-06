@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="881px" preserveAspectRatio="none" style="width:977px;height:881px;" version="1.1" viewBox="0 0 977 881" width="977px" zoomAndPan="magnify"><defs/><g><!--cluster frontent--><rect fill="#FFFFFF" height="219" style="stroke: #444444; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;" width="421" x="513" y="138"/><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="80" x="683.5" y="153.5352">«boundary»</text><text fill="#444444" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="110" x="668.5" y="171.957">Frontend / UI</text><text fill="#444444" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="53" x="697" y="186.9336">[System]</text><!--cluster backend--><rect fill="#FFFFFF" height="450" style="stroke: #444444; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;" width="857" x="22" y="420"/><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="80" x="410.5" y="435.5352">«boundary»</text><text fill="#444444" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="69" x="416" y="453.957">Backend</text><text fill="#444444" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="53" x="424" y="468.9336">[System]</text><!--entity feeder_ui--><rect fill="#438DD5" height="116.5742" style="stroke: #3C7FC0; stroke-width: 1.5;" width="180" x="529" y="215"/><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="65" x="586.5" y="236.6016">«container»</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="81" x="578.5" y="254.6016">Feeder-UI</text><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="104" x="567" y="269.5781">[PureScript/React]</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="0" x="621" y="285.6445"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="156" x="539" y="302.1328">Web Application/UI for</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="104" x="567" y="318.6211">creating tweets</text><!--entity kibana--><rect fill="#438DD5" height="135.418" style="stroke: #3C7FC0; stroke-width: 1.5;" width="174" x="744" y="206"/><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="65" x="798.5" y="227.6016">«container»</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="149" x="754" y="245.6016">Tweets/Sentiment</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="90" x="786" y="264.4453">Dashboard</text><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="48" x="807" y="279.4219">[Kibana]</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="0" x="833" y="295.4883"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="134" x="762" y="311.9766">Displays tweets and</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="75" x="793.5" y="328.4648">sentiments</text><!--entity feeder_http--><rect fill="#438DD5" height="133.0625" style="stroke: #3C7FC0; stroke-width: 1.5;" width="217" x="323.5" y="488"/><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="65" x="399.5" y="509.6016">«container»</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="99" x="382.5" y="527.6016">Feeder-Http</text><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="37" x="413.5" y="542.5781">[Scala]</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="0" x="434" y="558.6445"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="187" x="336.5" y="575.1328">Tweet backend. An API that</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="197" x="333.5" y="591.6211">writes tweets to the message</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="46" x="409" y="608.1094">broker</text><!--entity kafka--><rect fill="#438DD5" height="100.0859" style="stroke: #3C7FC0; stroke-width: 1.5;" width="200" x="325" y="741"/><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="65" x="392.5" y="762.6016">«container»</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="106" x="372" y="780.6016">Message Bus</text><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="41" x="404.5" y="795.5781">[Kafka]</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="0" x="427" y="811.6445"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="180" x="335" y="828.1328">Topics: tweets, sentiments</text><!--entity sentiments--><rect fill="#438DD5" height="116.5742" style="stroke: #3C7FC0; stroke-width: 1.5;" width="217" x="58.5" y="496"/><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="65" x="134.5" y="517.6016">«container»</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="91" x="121.5" y="535.6016">Sentiments</text><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="37" x="148.5" y="550.5781">[Scala]</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="0" x="169" y="566.6445"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="193" x="68.5" y="583.1328">Porcesses tweets from kafka</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="175" x="79.5" y="599.6211">using sentiment-analyser</text><!--entity sentiment_analyser--><rect fill="#438DD5" height="100.0859" style="stroke: #3C7FC0; stroke-width: 1.5;" width="208" x="38" y="741"/><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="65" x="109.5" y="762.6016">«container»</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="163" x="60.5" y="780.6016">Sentiment-Analyser</text><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="135" x="74.5" y="795.5781">[PureScript/Tensorflow]</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="0" x="144" y="811.6445"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="188" x="48" y="828.1328">Analyses tweet sentiements</text><!--entity elasticsearch--><path d="M635,738 C635,728 745,728 745,728 C745,728 855,728 855,738 L855,843.5742 C855,853.5742 745,853.5742 745,853.5742 C745,853.5742 635,853.5742 635,843.5742 L635,738 " fill="#438DD5" style="stroke: #3C7FC0; stroke-width: 1.5;"/><path d="M635,738 C635,748 745,748 745,748 C745,748 855,748 855,738 " fill="none" style="stroke: #3C7FC0; stroke-width: 1.5;"/><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="65" x="712.5" y="763.6016">«container»</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="147" x="671.5" y="781.6016">Persistent Storage</text><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="82" x="704" y="796.5781">[Elasticsearch]</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="0" x="747" y="812.6445"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="200" x="645" y="829.1328">Stores tweets and sentiments</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="79" x="705.5" y="845.6211">persistently</text><!--entity kafka_connect--><rect fill="#438DD5" height="133.0625" style="stroke: #3C7FC0; stroke-width: 1.5;" width="217" x="583.5" y="488"/><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="65" x="659.5" y="509.6016">«container»</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="147" x="618.5" y="527.6016">Elasticsearch Sink</text><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="91" x="646.5" y="542.5781">[Kafka Connect]</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="0" x="694" y="558.6445"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="193" x="593.5" y="575.1328">Kafka Connect instance with</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="189" x="595.5" y="591.6211">sinks that writes tweets and</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="185" x="599.5" y="608.1094">sentiments to Elasticsearch</text><!--entity user--><rect fill="#08427B" height="52.9766" style="stroke: #073B6F; stroke-width: 1.5;" width="72" x="689" y="8"/><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="52" x="699" y="29.6016">«person»</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="37" x="706.5" y="47.6016">User</text><!--link user to feeder_ui--><path d="M713.45,61.31 C697.6,96.76 668.59,161.63 646.89,210.15 " fill="none" id="user-&gt;feeder_ui" style="stroke: #666666; stroke-width: 1.0;"/><polygon fill="#666666" points="644.81,214.8,652.1339,208.2151,646.85,210.2351,644.83,204.9512,644.81,214.8" style="stroke: #666666; stroke-width: 1.0;"/><text fill="#666666" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="32" x="711" y="104.5684">Uses</text><text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="54" x="700" y="118.9121">[Browser]</text><!--link feeder_ui to feeder_http--><path d="M580.25,332.31 C550.76,376.31 510.05,437.05 478.75,483.75 " fill="none" id="feeder_ui-&gt;feeder_http" style="stroke: #666666; stroke-width: 1.0;"/><polygon fill="#666666" points="475.94,487.94,484.2605,482.6703,478.7135,483.7797,477.6041,478.2327,475.94,487.94" style="stroke: #666666; stroke-width: 1.0;"/><text fill="#666666" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="32" x="552" y="386.5684">Uses</text><text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="40" x="548" y="400.9121">[HTTP]</text><!--link feeder_http to kafka--><path d="M424.21,621.19 C423.29,631.16 422.5,641.34 422,651 C420.91,671.86 421.66,677.11 422,698 C422.2,710.16 422.54,723.23 422.93,735.58 " fill="none" id="feeder_http-&gt;kafka" style="stroke: #666666; stroke-width: 1.0;"/><polygon fill="#666666" points="423.1,740.83,426.8153,731.7088,422.9429,735.8325,418.8193,731.9601,423.1,740.83" style="stroke: #666666; stroke-width: 1.0;"/><text fill="#666666" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="105" x="423" y="679.5684">Sends tweets to</text><!--link sentiments to kafka--><path d="M206.89,613.23 C227.48,640.7 254.09,672.93 282,698 C297.89,712.27 316.23,725.83 334.36,737.93 " fill="none" id="sentiments-&gt;kafka" style="stroke: #666666; stroke-width: 1.0;"/><polygon fill="#666666" points="338.96,740.98,333.6574,732.6804,334.7888,738.223,329.2462,739.3544,338.96,740.98" style="stroke: #666666; stroke-width: 1.0;"/><text fill="#666666" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="125" x="283" y="664.5684">Reads from tweets</text><text fill="#666666" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="88" x="301.5" y="679.8789">and writes to</text><text fill="#666666" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="75" x="310" y="695.1895">sentiments</text><!--link sentiments to sentiment_analyser--><path d="M94.54,613.08 C84.55,624.51 75.75,637.27 70,651 C57.84,680.03 71.42,711.24 89.93,736.72 " fill="none" id="sentiments-&gt;sentiment_analyser" style="stroke: #666666; stroke-width: 1.0;"/><polygon fill="#666666" points="92.94,740.75,90.7784,731.1413,89.956,736.738,84.3593,735.9157,92.94,740.75" style="stroke: #666666; stroke-width: 1.0;"/><text fill="#666666" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="135" x="71" y="672.0684">Gets the sentiments</text><text fill="#666666" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="55" x="113" y="687.3789">analysis</text><!--link kafka_connect to kafka--><path d="M613.28,621.25 C601.99,631.08 590.61,641.2 580,651 C558.3,671.04 554.71,677.96 533,698 C518.86,711.06 503.28,724.72 488.47,737.39 " fill="none" id="kafka_connect-&gt;kafka" style="stroke: #666666; stroke-width: 1.0;"/><polygon fill="#666666" points="484.32,740.94,493.7677,738.1579,488.1293,737.7013,488.5859,732.0629,484.32,740.94" style="stroke: #666666; stroke-width: 1.0;"/><text fill="#666666" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="119" x="581" y="672.0684">Reads tweets and</text><text fill="#666666" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="75" x="605" y="687.3789">sentiments</text><!--link kafka_connect to elasticsearch--><path d="M706.83,621.13 C713.98,652.77 722.55,690.68 729.76,722.55 " fill="none" id="kafka_connect-&gt;elasticsearch" style="stroke: #666666; stroke-width: 1.0;"/><polygon fill="#666666" points="730.9,727.61,732.8194,717.95,729.7987,722.7328,725.0159,719.7121,730.9,727.61" style="stroke: #666666; stroke-width: 1.0;"/><text fill="#666666" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="120" x="724" y="672.0684">Writes tweets and</text><text fill="#666666" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="75" x="748.5" y="687.3789">sentiments</text><!--link kibana to elasticsearch--><path d="M854.15,341.35 C880.08,428.12 911.78,582.12 857,698 C852.61,707.29 846.77,715.95 840.06,723.95 " fill="none" id="kibana-&gt;elasticsearch" style="stroke: #666666; stroke-width: 1.0;"/><polygon fill="#666666" points="836.7,727.83,845.6111,723.6357,839.9692,724.0468,839.5581,718.405,836.7,727.83" style="stroke: #666666; stroke-width: 1.0;"/><text fill="#666666" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="77" x="888" y="559.5684">Reads from</text><!--link user to kibana--><path d="M744.53,61.22 C750.92,70.33 757.72,80.85 763,91 C781.12,125.86 796.86,166.68 808.62,200.76 " fill="none" id="user-&gt;kibana" style="stroke: #666666; stroke-width: 1.0;"/><polygon fill="#666666" points="810.32,205.74,811.1978,195.9303,808.7046,201.0081,803.6268,198.515,810.32,205.74" style="stroke: #666666; stroke-width: 1.0;"/><text fill="#666666" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="32" x="788" y="104.5684">Uses</text><text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="54" x="777" y="118.9121">[Browser]</text><!--
+@startuml C4_Elements
+
+
+
+
+
+skinparam defaultTextAlignment center
+
+skinparam wrapWidth 200
+skinparam maxMessageSize 150
+
+skinparam rectangle {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam database {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam Arrow {
+    Color #666666
+    FontColor #666666
+    FontSize 12
+}
+
+skinparam rectangle<<boundary>> {
+    Shadowing false
+    StereotypeFontSize 0
+    FontColor #444444
+    BorderColor #444444
+    BorderStyle dashed
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam rectangle<<person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+
+skinparam rectangle<<external_person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+
+skinparam rectangle<<system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+
+skinparam rectangle<<external_system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+
+skinparam database<<system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+
+skinparam database<<external_system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam rectangle<<container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #438DD5
+    BorderColor #3C7FC0
+}
+
+skinparam database<<container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #438DD5
+    BorderColor #3C7FC0
+}
+
+
+
+
+
+
+
+
+top to bottom direction
+
+rectangle "==User" <<person>> as user
+
+rectangle "==Frontend / UI\n<size:12>[System]</size>" <<boundary>> as frontent {
+  rectangle "==Feeder-UI\n//<size:12>[PureScript/React]</size>//\n\n  Web Application/UI for creating tweets" <<container>> as feeder_ui
+  rectangle "==Tweets/Sentiment Dashboard\n//<size:12>[Kibana]</size>//\n\n Displays tweets and sentiments" <<container>> as kibana
+}
+
+rectangle "==Backend\n<size:12>[System]</size>" <<boundary>> as backend {
+  rectangle "==Feeder-Http\n//<size:12>[Scala]</size>//\n\n Tweet backend. An API that writes tweets to the message broker" <<container>> as feeder_http
+  rectangle "==Message Bus\n//<size:12>[Kafka]</size>//\n\n Topics: tweets, sentiments" <<container>> as kafka
+  rectangle "==Sentiments\n//<size:12>[Scala]</size>//\n\n Porcesses tweets from kafka using sentiment-analyser" <<container>> as sentiments
+  rectangle "==Sentiment-Analyser\n//<size:12>[PureScript/Tensorflow]</size>//\n\n Analyses tweet sentiements" <<container>> as sentiment_analyser
+  database "==Persistent Storage\n//<size:12>[Elasticsearch]</size>//\n\n Stores tweets and sentiments persistently" <<container>> as elasticsearch
+  rectangle "==Elasticsearch Sink\n//<size:12>[Kafka Connect]</size>//\n\n Kafka Connect instance with sinks that writes tweets and sentiments to Elasticsearch" <<container>> as kafka_connect
+}
+
+user - -> feeder_ui : "===Uses\n//<size:12>[Browser]</size>//"
+feeder_ui - -> feeder_http : "===Uses\n//<size:12>[HTTP]</size>//"
+feeder_http - -> kafka : "===Sends tweets to"
+sentiments - -> kafka : "===Reads from tweets and writes to sentiments"
+sentiments - -> sentiment_analyser : "===Gets the sentiments analysis"
+kafka_connect - -> kafka : "===Reads tweets and sentiments"
+kafka_connect - -> elasticsearch : "===Writes tweets and sentiments"
+kibana - -> elasticsearch : "===Reads from"
+user - -> kibana : "===Uses\n//<size:12>[Browser]</size>//"
+@enduml
+
+PlantUML version 1.2019.09(Mon Aug 26 17:19:51 WEST 2019)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 1.8.0_212-b04
+Operating System: Mac OS X
+OS Version: 10.15.3
+Default Encoding: UTF-8
+Language: en
+Country: GB
+--></g></svg>
