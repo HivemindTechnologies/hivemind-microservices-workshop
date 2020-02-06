@@ -8,6 +8,7 @@ Demo of a microservice architecture for sentiment analysis. It provides a simple
 - [Prerequisites](#prerequisites)
 - [Running locally (non-development)](#running-locally-non-development)
 - [Developing](#developing)
+- [Exercises](https://github.com/HivemindTechnologies/hivemind-microservices-workshop/issues?q=is%3Aissue+is%3Aopen+label%3Aexercise)
 - [Troubleshooting](#troubleshooting)
 
 ## Overview
@@ -79,14 +80,14 @@ You should see the following output:
 
 #### Kibana
 
-- Open the Kibana management console and browse to `Management -> Index Management -> Elasticsearch -> IndexManagement` or open this link: <http://localhost:5601/app/Kibana#/management/elasticsearch/index_management/indices?_g=()>
+- Open the Kibana management console and browse to `Management -> Index Management -> Elasticsearch -> IndexManagement` or open this link: <http://localhost:5601/app/kibana#/management/elasticsearch/index_management/indices?_g=()>
 - You should see the indices `tweets` and `sentiments`.
 - If not, check that you have set up kafka-connect correctly.
 - Now we need to create the Kibana indices. On the same page, select `Kibana -> IndexManagement` or click
-<http://localhost:5601/app/Kibana#/management/Kibana/index_patterns?_g=()>
+<http://localhost:5601/app/Kibana#/management/kibana/index_patterns?_g=()>
 - Click on `Create index pattern` with the pattern `sentiments*` and click on `Next` and `Create index pattern`.
 - You can do the same for tweets.
-- On the main menu select `Discover` or click http://localhost:5601/app/Kibana#/discover?_g=()
+- On the main menu select `Discover` or click http://localhost:5601/app/kibana#/discover?_g=()
 - You should now see your analysed tweets.
 
 You can find some [examples here](https://github.com/conversationai/conversationai.github.io/blob/master/crowdsourcing_annotation_schemes/toxicity_with_subattributes.md#examples-answers-from-a-rater-to-help-calibrate-annotators).
@@ -247,7 +248,6 @@ You should get a lot of log messages.
 Post a few tweets.
 
 Follow the instructions to [setup Kafka Connect & Kibana](#setup-kafka-connect-kibana).
-
 
 ## Troubleshooting
 
