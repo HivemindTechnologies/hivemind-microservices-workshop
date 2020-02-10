@@ -1,6 +1,6 @@
 # Hivemind Microservice Workshop Exercise Material
 
-Demo of a microservice architecture for sentiment analysis. It provides a simple ui for tweeting. Tweets are then sent for sentiment analysis (toxicity). This repo comes with batteries included, apart from docker-compose and vs code (for development) no further stuff required 😎(see [Prerequisites](#prerequisites) for more information).
+Demo of a microservice architecture for sentiment analysis. It provides a simple ui for tweeting. Tweets are then sent for sentiment analysis (toxicity). The  outcome can be seen in Kibana. This repo comes with batteries included, apart from docker-compose and vs code (for development) no further stuff required 😎(see [Prerequisites](#prerequisites) for more information).
 
 ## TOC
 
@@ -84,7 +84,7 @@ You should see the following output:
 - You should see the indices `tweets` and `sentiments`.
 - If not, check that you have set up kafka-connect correctly.
 - Now we need to create the Kibana indices. On the same page, select `Kibana -> IndexManagement` or click
-<http://localhost:5601/app/Kibana#/management/kibana/index_patterns?_g=()>
+<http://localhost:5601/app/kibana#/management/kibana/index_patterns?_g=()>
 - Click on `Create index pattern` with the pattern `sentiments*` and click on `Next` and `Create index pattern`.
 - You can do the same for tweets.
 - On the main menu select `Discover` or click http://localhost:5601/app/kibana#/discover?_g=()

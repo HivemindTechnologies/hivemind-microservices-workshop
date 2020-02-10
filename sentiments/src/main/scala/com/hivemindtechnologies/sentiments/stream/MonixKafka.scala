@@ -62,7 +62,7 @@ object MonixKafka {
     ).withBootstrapServers(kafkaSettings.bootstrapServers)
       .withGroupId(kafkaSettings.groupId)
       .withProperty(ConsumerConfig.ENABLE_AUTO_COMMIT_CONFIG, "true")
-      .withProperty(ConsumerConfig.AUTO_OFFSET_RESET_CONFIG, "latest")
+      .withProperty(ConsumerConfig.AUTO_OFFSET_RESET_CONFIG, "earliest")
 
     new MonixKafka(producerSettings, consumerSettings)
   }
