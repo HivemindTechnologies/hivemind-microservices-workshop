@@ -15,9 +15,9 @@
   "dependencies": {
     "http-server": "^0.12.1",
     "purescript": "^0.13.6",
-    "purty": "^4.5.2",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
+    "purty": "^4.6.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
     "spago": "^0.13.1"
   }
 }
