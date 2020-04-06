@@ -10,7 +10,7 @@ import com.typesafe.config.Config
 import org.apache.kafka.clients.producer.ProducerRecord
 import org.apache.kafka.common.serialization.StringSerializer
 
-class MonixKafkaProducer(
+class KafkaProducer(
                           producerSettings: ProducerSettings[String, String],
                           topic: Topic
                         )(implicit mat: Materializer)
@@ -27,17 +27,17 @@ class MonixKafkaProducer(
   }
 }
 
-object MonixKafkaProducer {
+object KafkaProducer {
 
   def fromConfig[F[_]](producerConfig: Config, kafkaSettings: KafkaSettings)(
     implicit materializer: Materializer
-  ): MonixKafkaProducer = {
+  ): KafkaProducer = {
     val producerSettings = ProducerSettings(
       producerConfig,
       new StringSerializer,
       new StringSerializer
     ).withBootstrapServers(kafkaSettings.bootstrapServers)
-    new MonixKafkaProducer(producerSettings, Topic(kafkaSettings.outputTopic))
+    new KafkaProducer(producerSettings, Topic(kafkaSettings.outputTopic))
   }
 
 }

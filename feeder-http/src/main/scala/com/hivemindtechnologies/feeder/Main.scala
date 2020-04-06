@@ -5,7 +5,7 @@ import akka.stream.ActorMaterializer
 import cats.effect.{ExitCode, IO, IOApp}
 import com.hivemindtechnologies.feeder.hocon.{AppSettings, HttpSettings}
 import com.hivemindtechnologies.feeder.http.HttpHandler
-import com.hivemindtechnologies.feeder.producer.MonixKafkaProducer
+import com.hivemindtechnologies.feeder.producer.KafkaProducer
 import com.typesafe.config.ConfigFactory
 import io.chrisdavenport.log4cats.slf4j.Slf4jLogger
 import org.http4s.HttpRoutes
@@ -53,7 +53,7 @@ object Main extends IOApp {
       producerConfig <- IO(
         ConfigFactory.load().getConfig("akka.kafka.producer")
       )
-      producer = MonixKafkaProducer
+      producer = KafkaProducer
         .fromConfig(producerConfig, app.kafka)
 
       service = new HttpHandler[IO](logger, producer).routes

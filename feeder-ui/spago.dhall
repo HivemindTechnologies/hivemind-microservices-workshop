@@ -6,10 +6,7 @@ You can edit this file as you like.
 , dependencies =
     [ "affjax"
     , "console"
-    , "datetime"
     , "effect"
-    , "formatters"
-    , "now"
     , "psci-support"
     , "react-basic"
     , "react-basic-hooks"

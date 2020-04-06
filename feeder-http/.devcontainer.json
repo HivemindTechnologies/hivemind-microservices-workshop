@@ -1,5 +1,5 @@
 {
-    "name": "Feeder",
+    "name": "feeder-http",
     "dockerComposeFile": [
         "../docker-compose.yml",
         "../docker-compose.feeder-http.yml"

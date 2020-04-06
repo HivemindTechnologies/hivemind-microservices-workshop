@@ -2,7 +2,7 @@ package com.hivemindtechnologies.feeder.http
 
 import cats.effect.Sync
 import cats.implicits._
-import com.hivemindtechnologies.feeder.model.Tweet
+import com.hivemindtechnologies.feeder.model.TweetInput
 import com.hivemindtechnologies.feeder.producer.{Content, Key, Producer}
 import io.chrisdavenport.log4cats.Logger
 import io.circe.generic.auto._
@@ -11,12 +11,15 @@ import org.http4s.circe.jsonOf
 import org.http4s.dsl.Http4sDsl
 import org.http4s.headers.`Content-Type`
 import io.circe.syntax._
+import java.time.format.DateTimeFormatter
+import java.time.LocalDateTime
+import com.hivemindtechnologies.feeder.model.TweetOuput
 
 class HttpHandler[F[_]](logger: Logger[F], producer: Producer[F])(
   implicit S: Sync[F]
 ) extends Http4sDsl[F] {
 
-  implicit private val jsonDecoder: EntityDecoder[F, Tweet] = jsonOf
+  implicit private val jsonDecoder: EntityDecoder[F, TweetInput] = jsonOf
 
   val mkJson: Response[F] => Response[F] =
     _.withContentType(`Content-Type`(MediaType.application.json))
@@ -26,8 +29,10 @@ class HttpHandler[F[_]](logger: Logger[F], producer: Producer[F])(
       case req @ POST -> Root / "tweet" =>
         for {
           _ <- logger.info("Received POST tweet")
-          tweet <- req.as[Tweet]
-          _ <- producer.push(Key("feeder"), Content(tweet.asJson.noSpaces))
+          tweetInput <- req.as[TweetInput]
+          timestamp <- S.delay(LocalDateTime.now).map(DateTimeFormatter.ISO_DATE_TIME.format)
+          tweetOutput = TweetOuput(tweetInput.content, timestamp)
+          _ <- producer.push(Key("feeder"), Content(tweetOutput.asJson.noSpaces))
           resp <- Ok("""{"status":"done"}""").map(mkJson)
         } yield resp
 
