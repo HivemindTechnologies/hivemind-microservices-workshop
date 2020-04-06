@@ -2,7 +2,7 @@ module Main where
 
 import Prelude
 
-import Reducer (mkReducer)
+import Tweets (mkTweetUI)
 import React.Basic.Hooks(element)
 import Data.Maybe (Maybe(..))
 import Effect (Effect)
@@ -19,7 +19,7 @@ main = do
   case container of
     Nothing -> throw "Container element not found."
     Just c  -> do 
-      reducer <- mkReducer "http://localhost:9001" 
+      reducer <- mkTweetUI "http://localhost:9001" 
       let app = element reducer {}
       render app c
 

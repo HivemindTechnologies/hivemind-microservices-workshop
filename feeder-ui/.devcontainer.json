@@ -1,5 +1,5 @@
 {
-    "name": "Feeder UI",
+    "name": "feeder-ui",
     "dockerComposeFile": [
         "../docker-compose.yml",
         "../docker-compose.feeder-ui.yml"
