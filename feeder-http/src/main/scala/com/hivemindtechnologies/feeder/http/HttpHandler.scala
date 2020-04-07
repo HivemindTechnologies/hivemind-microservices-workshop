@@ -12,8 +12,9 @@ import org.http4s.dsl.Http4sDsl
 import org.http4s.headers.`Content-Type`
 import io.circe.syntax._
 import java.time.format.DateTimeFormatter
-import java.time.LocalDateTime
+import java.time.ZonedDateTime
 import com.hivemindtechnologies.feeder.model.TweetOuput
+import java.time.ZonedDateTime
 
 class HttpHandler[F[_]](logger: Logger[F], producer: Producer[F])(
   implicit S: Sync[F]
@@ -30,7 +31,7 @@ class HttpHandler[F[_]](logger: Logger[F], producer: Producer[F])(
         for {
           _ <- logger.info("Received POST tweet")
           tweetInput <- req.as[TweetInput]
-          timestamp <- S.delay(LocalDateTime.now).map(DateTimeFormatter.ISO_DATE_TIME.format)
+          timestamp <- S.delay(ZonedDateTime.now).map(DateTimeFormatter.ISO_DATE_TIME.format)
           tweetOutput = TweetOuput(tweetInput.content, timestamp)
           _ <- producer.push(Key("feeder"), Content(tweetOutput.asJson.noSpaces))
           resp <- Ok("""{"status":"done"}""").map(mkJson)

@@ -1,10 +1,10 @@
-FROM node:12-buster
+FROM node:13-buster
 
 COPY . /app
 
 WORKDIR /app
 
-RUN apt-get update && apt-get install libncurses5 -y
+RUN apt update && apt install libncurses5 -y
 
 RUN rm -rf node_modules/ && \
     npm install 

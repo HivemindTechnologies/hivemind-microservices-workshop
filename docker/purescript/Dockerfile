@@ -1,4 +1,4 @@
-FROM node:12-buster AS builder
+FROM node:13-buster AS builder
 
 COPY . /app
 

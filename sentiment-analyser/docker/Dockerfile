@@ -1,4 +1,4 @@
-FROM node:12-buster AS builder
+FROM node:13-buster AS builder
 
 COPY . /app
 
@@ -10,7 +10,7 @@ RUN rm -rf node_modules/ && \
     npm install && \
     npx spago bundle-app --to Main.js
 
-FROM node:12-buster 
+FROM node:13-buster-slim 
 
 COPY --from=builder /app /app
 
