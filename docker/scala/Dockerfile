@@ -1,4 +1,4 @@
-FROM hseeberger/scala-sbt:8u242_1.3.7_2.13.1
+FROM hseeberger/scala-sbt:11.0.6_1.3.9_2.13.1
 
 RUN apt-get update && \
     apt-get install sudo && \

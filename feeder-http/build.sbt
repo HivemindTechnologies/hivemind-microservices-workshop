@@ -1,7 +1,7 @@
-ThisBuild / scalaVersion := "2.13.1"
-ThisBuild / version := "0.1.0-SNAPSHOT"
-ThisBuild / organization := "com.hivemindtechnologies"
-ThisBuild / organizationName := "Hivemind Technologies AG"
+scalaVersion := "2.13.1"
+version := "0.1.0-SNAPSHOT"
+organization := "com.hivemindtechnologies"
+organizationName := "Hivemind Technologies AG"
 
 Global / onChangedBuildSource := ReloadOnSourceChanges
 
@@ -37,7 +37,7 @@ lazy val root = (project in file("."))
       // Streams
       "com.typesafe.akka" %% "akka-stream-kafka" % "2.0.1",
     ),
-    javacOptions ++= Seq("-source", "1.8", "-target", "1.8"),
+    javacOptions ++= Seq("-source", "11", "-target", "11"),
     scalacOptions := Seq(
       "-Ymacro-annotations",
       "-deprecation", // Emit warning and location for usages of deprecated APIs.
